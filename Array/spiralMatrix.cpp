@@ -5,8 +5,6 @@ public:
         vector<vector<bool>> visited(matrix.size(), vector<bool>(matrix[0].size()));
         vector<int> order;
         int row = 0; 
-                            cout<<"hello"<<endl;
-
         int column = 0;
         while(row >= 0 && row < matrix.size() && column >= 0 && column < matrix[0].size() && visited[row][column] == false) {
             visited[row][column] = true;
@@ -16,7 +14,6 @@ public:
                     column++;
                 } else {
                     currentDirection = "bottom";
-                    cout<<"hello"<<endl;
                     row++;
                 }
             } else if (currentDirection == "bottom") {
