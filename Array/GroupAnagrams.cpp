@@ -1,5 +1,3 @@
-#include <vector>
-
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
@@ -9,7 +7,11 @@ public:
             string temp = strs.at(i);
             sort(temp.begin(), temp.end());
             if (set.find(temp) == set.end()) {
-                set.emplace(make_pair<string, vector<string>>(temp,  set.find(temp)->second));
+                vector<string> cur;
+                cur.push_back(strs.at(i));
+                set.emplace(make_pair<string, vector<string>>(temp,  cur);
+            } else {
+
             }
         }
         for (auto const& x : set) {
