@@ -1,3 +1,5 @@
+// Topdown DP memoization problem
+// Maximum profit
 function sortFunction(a: number[], b: number[]) {
   if (a[0] === b[0]) {
     return 0;
