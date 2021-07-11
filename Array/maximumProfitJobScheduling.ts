@@ -1,5 +1,6 @@
 // Topdown DP memoization problem
-// Maximum profit
+// Maximum profit is the max of taking the current job + recurse the next AVAILABLE job OR ignore the current job and recurse on the next job
+
 function sortFunction(a: number[], b: number[]) {
   if (a[0] === b[0]) {
     return 0;
