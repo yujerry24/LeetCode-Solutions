@@ -1,3 +1,14 @@
+/*
+A variation of binary search
+3 cases
+i) middle <= right  so there must be a peak value somewhere in between  or at the end
+ii) middle <= left so there must be a peak value in between or at the end
+iii) middle > left && right
+    a) Eithier there is only one peak and we are at it.
+    b) There is at least one peak but we aren't at it.
+        Recurse both sides to find it
+*/
+
 class Solution {
     public int binarySearch(int left, int right, int[] nums) {
         System.out.println(left);
