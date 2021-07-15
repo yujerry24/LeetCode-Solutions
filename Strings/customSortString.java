@@ -1,3 +1,6 @@
+// Use a hashmap to keep track of all occurences of each character in str
+// Loop through order and add characters in by occurence count from map 
+
 class Solution {
     public String customSortString(String order, String str) {
         HashMap<String, Integer> map = new HashMap<>();
